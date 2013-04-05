@@ -1,0 +1,190 @@
+# Простые эксперименты с элементами HTML форм
+
+date_time: 2013-04-05 19:45:52 MSK
+
+Дорогой друг, хочу поговорить на очень простую и интересную тему. Давныым
+давно один из сотрудников центра яндерных исследований придумал штуку, которая
+вместе с другими штуками изменила мир. Тим Бернерс-Ли создал HTML.
+
+Точной даты изобретения HTML нет, это 1990 год плюс/минус несколько лет. Зато
+есть точная дата когда повилась вторая версия HTML. Это 22 сентября 1995 года.
+Через два года, 14 января 1997 года появился HTML версии 3.2 и в этой версии
+HTML впервые появились формы.
+
+Прошло 16 лет с момента появления форм в интернете.
+
+## Самая простая форма
+
+Вот код:
+
+    <!DOCTYPE HTML>
+    <html>
+    <body>
+
+    <form>
+
+      <p>
+        <input type="input" id="input_id" name="input_name" value="input_value"/>
+      </p>
+
+      <p>
+        <input type="submit" id="submit_id" name="submit_name" value="submit_value"/>
+      </p>
+
+    </form>
+
+    </body>
+    </html>
+
+Есть разместить этот html код в файле и настроить веб сервер то в браузере эта
+форма будет выглядеть вот так:
+
+![Пример html формы в браузере][simple-form]
+
+А если нажать кнопку, то url изменится и станет вот таким:
+
+    http://localhost/?input_name=input_value&submit_name=submit_value
+
+Чтобы урл было проще разбирать, я разбил его на элементы и написал в столбик
+(и дальше все время буду вот писать чтобы проще было воспринимать).
+
+    http://localhost/
+    ?input_name=input_value
+    &submit_name=submit_value
+
+Как видно из этого примера в url было передано то что находилось в атрибутах
+'name' и 'value'.
+
+Сразу возникает вопрос — «Почему в url передается значение атрибута 'name', а
+не атрибута 'id'?». И это отличный вопрос, в этом тексте будет ответ на этот
+вопрос.
+
+## Элемент «переключатель» (так же известный под именем «радиокнопка»)
+
+«Радиокнопка» — совершенно дурацкое название. Давным давно в американских
+автомагнитолах можно было переключать станции с помощью специальных кнопок.
+Если нажимаешь на кнопку, то другая кнопка «отжимается». В нажатом состоянии
+может быть только одна кнопка. Вот от такого элемента управления из реального
+мира и пошло название элемента управления в html формах.
+
+ ![Фотография старой радиомагнитолы в машине][car-radio]
+
+Кстати, в СССР были телевизоры в которых по точно такой же логике
+переключались каналы. Так что если бы СССР был родиной HTML, то, возможно,
+этот элемент управления назывался твкнопка.
+
+ ![Фотография кнопок старого телевизора][tv]
+
+Вот адски сложный пример использования радиокнопок. Есть форма в котором два
+набора радиокнопок.
+
+
+    <!DOCTYPE HTML>
+    <html>
+    <body>
+
+    <form>
+
+      <p>
+        <input type="radio" id="radio_id_1" name="block_1" value="1-1"/>
+        <label for="radio_id_1">Блок 1 Радиокнопка 1</label>
+      </p>
+
+      <p>
+        <input type="radio" id="radio_id_2" name="block_2" value="2-1"/>
+        <label for="radio_id_2">Блок 2 Радиокнопка 1</label>
+      </p>
+
+      <p>
+        <input type="radio" id="radio_id_3" name="block_1" value="1-2"/>
+        <label for="radio_id_3">Блок 1 Радиокнопка 1</label>
+      </p>
+
+      <p>
+        <input type="radio" id="radio_id_4" name="block_2" value="2-2"/>
+        <label for="radio_id_4">Блок 2 Радиокнопка 2</label>
+      </p>
+
+      <p>
+        <input type="submit" id="submit_id" name="submit_name" value="submit_value"/>
+      </p>
+
+    </form>
+
+    </body>
+    </html>
+
+В браузере такая форма выглядит так:
+
+ ![Html форма с радиокнопками в браузере][radio-form]
+
+Если выбрать первые 2 радиокноки и нажать на кнопку submit, то url изменится
+на следующий:
+
+    http://localhost/
+    ?block_1=1-1
+    &block_2=2-1
+    &submit_name=submit_value
+
+Если разобрать и понять этот фрагмент html кода, то вопросов о то как работают
+радиокнопки в html больше никогда не возникнет.
+
+## Чекбоксы
+
+Код:
+
+    <!DOCTYPE HTML>
+    <html>
+    <body>
+
+    <form>
+
+      <p>
+        <input type="checkbox" id="checkbox_id_1" name="checkbox_1"/>
+        <label for="checkbox_id_1">Чекбокс 1 (с именем checkbox_1)</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="checkbox_id_2" name="checkbox_1"/>
+        <label for="checkbox_id_2">Чекбокс 2 (с именем checkbox_1)</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="checkbox_id_3" name="checkbox_2"/>
+        <label for="checkbox_id_3">Чекбокс 3 (с именем checkbox_2)</label>
+      </p>
+
+      <p>
+        <input type="submit" id="submit_id" name="submit_name" value="submit_value"/>
+      </p>
+
+    </form>
+
+    </body>
+    </html>
+
+Вот на какой url мы перейдем, если выберем все три чекбокса:
+
+    http://localhost/
+    ?checkbox_1=on
+    &checkbox_1=on
+    &checkbox_2=on
+    &submit_name=submit_value
+
+А вот на какой url мы перейдем если выбрем только чекбокс 2:
+
+    http://localhost/
+    ?checkbox_1=on
+    &submit_name=submit_value
+
+Два непростых момента:
+
+ * в url могут быть два и более параметра с одним и тем же именем
+ * если чекбокс выключен, то он в url не передается
+
+Это поведение кажется вполне логичным, когда изучаешь формы, но когд
+
+ [simple-form]: http://upload.bessarabov.ru/bessarabov/IFxi74LlQv1YO6GRJykY1oiRWbs.png
+ [car-radio]: http://upload.bessarabov.ru/bessarabov/Bnb-SFSzhyi22BwBN4IJ3EVg1xc.jpg
+ [tv]: http://upload.bessarabov.ru/bessarabov/L0_yPBPKHG5edf_Ye9qw7uYbx6k.png
+ [radio-form]: http://upload.bessarabov.ru/bessarabov/8eGWMmCkjtAPCNqva8LoAb8NgYU.png
