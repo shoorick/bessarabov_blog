@@ -182,7 +182,7 @@ Perl с помощью ошибки "Wide character in print at" предупр�
     use warnings FATAL => 'all';
     use utf8;
 
-    binmode STDOUT, ":utf8";
+    binmode STDIN, ":utf8";
     binmode STDOUT, ":utf8";
     binmode STDERR, ":utf8";
 
