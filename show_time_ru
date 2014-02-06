@@ -61,9 +61,9 @@ date_time: 2013-12-10 18:03:13 MSK
 что это упрощает вывод, это еще и место на экране экономит. А для того чтобы
 легко было найти начало месяца я стал выделять первое число.
 
- [mac_no_time]: http://upload.bessarabov.ru/bessarabov/O9BZYWTZjFBYchkxKOqWNdYzlfg.png
- [d]: http://upload.bessarabov.ru/bessarabov/HxFm0kqxt09u6Xy71qfhB91asqA.png
- [old_d]: http://upload.bessarabov.ru/bessarabov/sXt6fN5vZaWIjHbLArR1oVRgOrg.png
+ [mac_no_time]: https://upload.bessarabov.ru/bessarabov/O9BZYWTZjFBYchkxKOqWNdYzlfg.png
+ [d]: https://upload.bessarabov.ru/bessarabov/HxFm0kqxt09u6Xy71qfhB91asqA.png
+ [old_d]: https://upload.bessarabov.ru/bessarabov/sXt6fN5vZaWIjHbLArR1oVRgOrg.png
  [old_d_code]: https://gist.github.com/bessarabov/7890748
  [d_code]: https://metacpan.org/pod/App::D
- [with_month_separation]: http://upload.bessarabov.ru/bessarabov/q1ID6HwFDlLI38xB4R6ce9R9oHc.png
+ [with_month_separation]: https://upload.bessarabov.ru/bessarabov/q1ID6HwFDlLI38xB4R6ce9R9oHc.png

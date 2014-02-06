@@ -35,7 +35,7 @@ date_time: 2013-06-15 20:25:54 MSK
 
 Вот что выведет этот скрипт:
 
-![Вывод Perl скрипта без проблем с кодировкой](http://upload.bessarabov.ru/bessarabov/KRZPwiOnrnTy0RduCfTuCBXBkRo.png)
+![Вывод Perl скрипта без проблем с кодировкой](https://upload.bessarabov.ru/bessarabov/KRZPwiOnrnTy0RduCfTuCBXBkRo.png)
 
 В выводе все идеально. Именно так и должно все быть.
 
@@ -102,7 +102,7 @@ date_time: 2013-06-15 20:25:54 MSK
 
 Вот что выведет такой скрипт:
 
-![Проблема с кодировкой Perl](http://upload.bessarabov.ru/bessarabov/DpSBRbPpt2tHgXyDllNJmH0RfPY.png)
+![Проблема с кодировкой Perl](https://upload.bessarabov.ru/bessarabov/DpSBRbPpt2tHgXyDllNJmH0RfPY.png)
 
 Прагма "use utf8;" говорит Perl что код программы написан в кодировке utf8.
 Когда мы убираем эту прагму, Perl перестает считать что в переменной $string
@@ -133,8 +133,8 @@ SMALL LETTER A). В кодировке utf8 этот Unicode символ зап
  ![Байт b0][176]
 
  [wiki]: http://en.wikipedia.org/wiki/ISO/IEC_8859-1
- [176]: http://upload.bessarabov.ru/bessarabov/-MbqwpU0gkG9FpAZf8u7N3XqBTI.png
- [208]: http://upload.bessarabov.ru/bessarabov/To9jipnXLyVKa3GK57UpzMmVCj0.png
+ [176]: https://upload.bessarabov.ru/bessarabov/-MbqwpU0gkG9FpAZf8u7N3XqBTI.png
+ [208]: https://upload.bessarabov.ru/bessarabov/To9jipnXLyVKa3GK57UpzMmVCj0.png
 
 В случае если не указать "use utf8;" Perl не воспринимает строку как набор
 Unicode символов, а думает что это набор байт. И выводит каждый байт на экран
@@ -163,7 +163,7 @@ qw(:std :utf8;)".
 
 А вот его вывод:
 
-![Perl Wide character in print at](http://upload.bessarabov.ru/bessarabov/lySYT5aR146mpY_MQk8221xjB3Y.png)
+![Perl Wide character in print at](https://upload.bessarabov.ru/bessarabov/lySYT5aR146mpY_MQk8221xjB3Y.png)
 
 Perl с помощью ошибки "Wide character in print at" предупреждает нас о том что
 мы пытаемся напечатать utf8 строку куда-то (в данном случае в STDOUT) что не
@@ -213,7 +213,7 @@ Perl с помощью ошибки "Wide character in print at" предупр�
 
 Его вывод:
 
-![Проблема с length из-за кодировки в Perl](http://upload.bessarabov.ru/bessarabov/ysVYa6DNJ9knVHExYJs182Tg4ho.png)
+![Проблема с length из-за кодировки в Perl](https://upload.bessarabov.ru/bessarabov/ysVYa6DNJ9knVHExYJs182Tg4ho.png)
 
 Чудесная проблема. Вроде бы print работает — выводит то что нужно, но length()
 выдает неправильную длину строки и перевод строки в верхний регистр с помощью
