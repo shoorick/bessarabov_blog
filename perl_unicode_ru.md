@@ -246,10 +246,8 @@ Perl с помощью ошибки "Wide character in print at" предупр�
 Perl и Unicode рассматривается в куче статей. Вот несколько очень хороших
 статей:
 
- * [Unicode introduction][ui]
  * [Unicode. Ликбез][ul]
 
- [ui]: http://perltuts.com/tutorials/unicode-introduction
  [ul]: http://nordicdyno.github.io/blog/2012/02/17/unicode-basics/
 
 ## Резюме.
