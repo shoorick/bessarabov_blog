@@ -247,8 +247,10 @@ Perl и Unicode рассматривается в куче статей. Вот 
 статей:
 
  * [Unicode. Ликбез][ul]
+ * [Perl Unicode Cookbook][puc]
 
  [ul]: http://nordicdyno.github.io/blog/2012/02/17/unicode-basics/
+ [puc]: http://www.perl.com/pub/2012/04/perlunicook-standard-preamble.html
 
 ## Резюме.
 
