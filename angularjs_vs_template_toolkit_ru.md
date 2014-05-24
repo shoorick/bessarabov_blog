@@ -29,5 +29,11 @@ date_time: 2014-05-24 20:47:38 MSK
 я сейчас понимаю, символы "{{" лучше чем "[%" как минимум в одном — их гораздо
 проще набирать на клавиатуре.
 
+Отдельно замечатльно как этот шаблон разворачивается. AngularJS вставляет
+комментарии, которые помогают понять что произошло:
+
+![Скриншот Chrome Web Inspector][i]
+
  [t]: https://docs.angularjs.org/tutorial/step_02
  [tt]: http://www.template-toolkit.org
+ [i]: https://upload.bessarabov.ru/bessarabov/81IXDdKcRhFa1RRC_HTEtCCeMm4.png
