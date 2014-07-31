@@ -19,6 +19,9 @@ date_time: 2014-07-31 18:07:40 MSK
 
 ## Jaybird Bluebuds X (за: @cy6erbr4in, sagara, antonme)
 
+[Официальный сайт](http://www.jaybirdsport.com/bluebuds-x-bluetooth-headphones/)
+и [обзор Алишера](http://newrunners.ru/mag/bluebuds-x-besprovodnye-naushniki-dlya-bega-i-fitn/).
+
 @cy6erbr4in: Jaybird Bluebuds X пока лучшее что видел на рынке
 
 @antonme: Bluebuds хорошие, да, если тебя устраивают затычки.
@@ -55,5 +58,8 @@ date_time: 2014-07-31 18:07:40 MSK
 одном магизине, но у него гораздоу лучше рейтинг. Плюс она стоит 2 тысячи.
 
 Заказал, завтра должны привезти.
+
+**UPDATE** интернет магазин подвел, прислал письмо "По вашему заказу №...
+некоторых товаров нет в наличии", так что ничего мне завтра не привозят =(
 
 [q]: http://friendfeed.com/bessarabov/65fac9a5/iphone-macbook
