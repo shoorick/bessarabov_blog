@@ -57,7 +57,7 @@ Perl](http://pragmaticperl.com/issues/18/pragmaticperl-18-однострочни
     Execution of -e aborted due to compilation errors.
 
 Но писать каждый раз 'use feature "say";' слишком утомительно, поэтому
-появился новый ключ -E. Его можно использовать вместо -e и он включет
+появился новый ключ -E. Его можно использовать вместо -e и он включит
 все новые штуки, которые есть в Perl:
 
     $ perl -E 'say 2+5'
